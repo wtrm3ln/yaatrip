@@ -3,10 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <main className="flex flex-col justify-center items-center">
+      <main className="flex flex-col py-14 justify-center items-center">
           
-          
-          <div className="md:flex mx-auto">
           <Image
           src="/yaatrip.png"
           alt="Yaatrip"
@@ -14,25 +12,20 @@ export default function Home() {
           height={100}
           style={{ objectFit: 'contain' }}
           />
-
-          <Image
-          src="/proto.png"
-          alt="Yaatrip"
-          width={400} // Adjust width as needed
-          height={100}
-          style={{ objectFit: 'contain' }}
-          />
-          </div>
         
 
-        <div className="bg-primary mx-auto my-20 relative rounded-full flex items-center justify-center h-[80vw] w-[80vw] md:h-[90vh] md:w-[90vh]">
-          <div className="absolute inset-0 flex items-center justify-center text-gray-200">
+        <div className="mx-auto my-20 relative rounded-full flex items-center justify-center h-[80vw] w-[80vw] md:h-[90vh] md:w-[90vh]">
+          <div className="z-10 absolute inset-0 flex items-center justify-center text-primary">
             <p>Coming Soon...</p>
           </div>
-          <div className="rounded-full flex items-center justify-center h-[90%] w-[90%] border-dashed border-4 border-light md:animate-spin">
-            <div className="rounded-full flex items-center justify-center h-[95%] w-[95%] border-2 border-light">
-            </div>
-          </div>
+          <Image
+              src="/loading.png"
+              alt="Yaatrip"
+              width={500} // Adjust width as needed
+              height={100}
+              style={{ objectFit: 'contain' }}
+              className="rounded-full flex items-center justify-center animate-spin-slow"
+              />
         </div>
       </main>
 
