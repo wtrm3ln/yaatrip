@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen grid gap-5 md:pl-48 pt-12">
+    <div className="h-screen flex justify-center gap-5 md:pl-48 pt-12">
 
       <div className="hidden md:flex fixed rounded-full bg-primary -bottom-[60vh] -left-[110vh] h-[150vh] w-[150vh] flex items-center justify-center rounded-full">
           <div className="rounded-full w-[90%] h-[90%] border-2 border-light flex items-center justify-center shadow-xl ">
@@ -12,7 +12,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="fixed z-10 top-0 bottom-0 flex flex-col justify-between right-0 p-4 text-primary">
+        <div className="fixed z-10 left-0 md:left-auto top-0 bottom-0 md:right-0 flex flex-col justify-between p-4 text-primary">
           <div>
           <p className="font-bold">Contact Us</p>
             <a
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
       </div>
 
-      <div className="p-10">
+      <div className="p-10 ">
       <main className="mx-auto md:flex justify-bottom px-6">
           
           <Image
@@ -76,7 +76,7 @@ export default function Home() {
               />
         </div>
       </main>
-      <div className="px-6">
+      <div className="px-6 mt-7">
             <p className="text-[#238858] font-semibold text-3xl">Coming Soon...</p>
       </div>
       </div>
