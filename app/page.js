@@ -57,7 +57,7 @@ export default function Home() {
       <main className="mx-auto md:flex justify-bottom px-6">
           
           <Image
-          src="/yaatrip-1.png"
+          src="/yaatrip logo-03.png"
           alt="Yaatrip"
           width={700} // Adjust width as needed
           height={400}
