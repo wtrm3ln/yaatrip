@@ -2,9 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="h-screen flex justify-center gap-5 md:pl-48 pt-12">
+    <div>
+    <div className="h-screen relative flex overflow-hidden justify-center gap-5 md:pl-48 pt-12">
 
-      <div className="hidden md:flex fixed rounded-full bg-primary -bottom-[60vh] -left-[110vh] h-[150vh] w-[150vh] flex items-center justify-center rounded-full">
+      <div className="hidden md:flex absolute rounded-full bg-primary -bottom-[60vh] -left-[110vh] h-[150vh] w-[150vh] flex items-center justify-center rounded-full">
           <div className="rounded-full w-[90%] h-[90%] border-2 border-light flex items-center justify-center shadow-xl ">
           <div className="rounded-full w-[97%] h-[97%] border-dashed border-2 border-light">
             
@@ -12,7 +13,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="fixed z-10 left-0 md:left-auto top-0 bottom-0 md:right-0 flex flex-col justify-between p-4 text-primary">
+        <div className="absolute z-10 left-0 md:left-auto top-0 bottom-0 md:right-0 flex flex-col justify-between p-4 text-primary">
           <div>
           <p className="font-bold">Contact Us</p>
             <a
@@ -80,6 +81,30 @@ export default function Home() {
             <p className="text-[#238858] font-semibold text-3xl">Coming Soon...</p>
       </div>
       </div>
+    </div>
+    <footer>
+
+        <section className="md:flex justify-between items-center bg-gray-100 p-8">
+        {/* Left side: Logo */}
+        <div className="w-1/3">
+            <img src="/logo2.png" alt="Tulsi Tech Labs Logo" className="w-48" />
+        </div>
+
+        {/* Right side: Contact Details */}
+        <div className="w-2/3 text-gray-700 md:text-right">
+            <h2 className="text-xl text-gray-400 font-semibold">CONTACT</h2>
+            <p>HN0 14, WD N0 4, Pataudi - 122503 (Haryana)</p>
+            <p>Phone Number: <a href="tel:+919499116400" className="text-blue-600">+91 9499116400</a></p>
+            <p>E-Mail: <a href="mailto:info@tulsitechlabs.com" className="text-blue-600">info@tulsitechlabs.com</a></p>
+        </div>
+        </section>
+
+        <div className="bg-primary text-white py-8">
+            <div className="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Tulsi Tech Labs. All rights reserved.</p>
+            </div>
+        </div>
+      </footer>
     </div>
   );
 }
